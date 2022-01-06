@@ -15,7 +15,7 @@ The Colorado Board of Elections wanted the followng tasks completed:
 
 ## Election Audit Results
 ### Resources 
-Python 3.6.7 was used to analyze the voting data. Visual Studio code 1.63.2 was used as a text editor. The data source used was election-analysis.csv. 
+Python 3.6.7 was used to analyze the voting data. Visual Studio code 1.63.2 was used as a text editor. The data source used was [election-analysis.csv](election-analysis.csv). 
 
 ### Methods
 
