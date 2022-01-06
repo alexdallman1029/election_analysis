@@ -20,43 +20,43 @@ Python 3.6.7 was used to analyze the voting data. Visual Studio code 1.63.2 was 
 ### Methods
 
 The following is the code, written in python.
-  # -*- coding: UTF-8 -*-
-"""PyPoll Homework Challenge Solution."""
 
-  #Add our dependencies.
-  import csv
-  import os
+```python
 
-  #Add a variable to load a file from a path.
-  file_to_load = os.path.join("Resources", "election_results.csv")
-  # Add a variable to save the file to a path.
-  file_to_save = os.path.join("..", "election_results.txt")
+# Add our dependencies.
+import csv
+import os
 
-  #Initialize a total vote counter.
-  total_votes = 0
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("..", "election_results.txt")
 
-  #Candidate Options and candidate votes.
-  candidate_options = []
-  candidate_votes = {}
+# Initialize a total vote counter.
+total_votes = 0
 
-  #1: Create a county list and county votes dictionary.
-  county_options = []
-  county_votes = {}
+# Candidate Options and candidate votes.
+candidate_options = []
+candidate_votes = {}
 
-  #Track the winning candidate, vote count and percentage
-  winning_candidate = ""
-  winning_count = 0
-  winning_percentage = 0
+# 1: Create a county list and county votes dictionary.
+county_options = []
+county_votes = {}
 
-  #2: Track the largest county and county voter turnout.
+# Track the winning candidate, vote count and percentage
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
 
-  largest_voting_county = []
-  largest_county_count = 0
-  largest_county_percentage = 0
+# 2: Track the largest county and county voter turnout.
+
+largest_voting_county = []
+largest_county_count = 0
+largest_county_percentage = 0
 
 
-  #Read the csv and convert it into a list of dictionaries
-  with open(file_to_load) as election_data:
+# Read the csv and convert it into a list of dictionaries
+with open(file_to_load) as election_data:
     reader = csv.reader(election_data)
 
     # Read the header
@@ -100,8 +100,8 @@ The following is the code, written in python.
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
 
-  #Save the results to our text file.
-  with open(file_to_save, "w") as txt_file:
+# Save the results to our text file.
+with open(file_to_save, "w") as txt_file:
 
     # Print the final vote count (to terminal)
     election_results = (
@@ -189,6 +189,7 @@ The following is the code, written in python.
     # Save the winning candidate's name to the text file
     txt_file.write(winning_candidate_summary)
 
+```
 ### Results 
 #### Voter Turnout by County 
 
